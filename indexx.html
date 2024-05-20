@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="indexx.css">
+    <script src="https://kit.fontawesome.com/6e034d230f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Merriweather+Sans:wght@300&family=Raleway:ital,wght@0,200;1,200;1,300&family=Roboto+Flex:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Prmanent-section -->
+        <h1 class="head">WEATHER APP</h1>
+        <div class="tab-container">
+            <div class="user">Your Weather</div>
+            <div class="search">Search Weather</div>
+        </div>
+        <!-- Grant Access -->
+        <div class="location-container" GAS>
+            <img src="./assets/location.png" alt="" width="80px" height="80px">
+            <h1>Grant Location Access</h1>
+            <p>Allow Access to get weather Information</p>
+            <button GB>
+                Grant Access
+            </button>
+        </div>
+         <!-- search-section -->
+       <div class="search-container" SC>
+        <input type="text" placeholder="Search for City..." Inputval>
+        <button submitButton>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+       </div>
+        <!-- Weather display section -->
+       <div class="weather-container" WC>
+        <div class="cityANDFlag">
+            <p cityName></p>
+            <img flagImage width="30px" height="23px">
+        </div>
+        <p weathInfo class="desc"></p>
+        <img WeathImage width="100px" height="100px">
+        <p temp class="temp"></p>
+        <div class="parameters-container">
+            <div class="parameter">
+                <img src="./assets/wind.png" width="50px" height="50px">
+                <p>WindSpeed</p>
+                <p windSpeed></p>
+            </div>
+            <div class="parameter">
+                <img src="./assets/humidity.png" width="50px" height="50px">
+                <p>Humidity</p>
+                <p Humidity></p>
+            </div>
+            <div class="parameter">
+                <img src="./assets/cloud.png" width="50px" height="50px">
+                <p>Cloud</p>
+                <p cloud></p>
+            </div>
+        </div>
+       </div>
+
+       <!-- Loading-section -->
+       <div class="loading-container" loader>
+        <img src="./assets/load.gif" alt="" width="150px" height="150px">
+        <p>Loading</p>
+       </div>
+
+       <!-- Error-section -->
+       <div class="error" Err>
+        <img src="./assets/not-found.png" alt="" width="200px" height="200px">
+       </div>
+
+    </div>
+    <script src="indexx.js"></script>
+</body>
+</html>
