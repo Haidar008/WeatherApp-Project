@@ -120,6 +120,7 @@
 }
 .parameters-container{
     display: flex;
+    flex-direction: row;
     gap: 3rem;
 }
 .parameter{
